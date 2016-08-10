@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#cvs{
+			/*width: 500px;
+			height: 500px;*/
+			background: #000;
+		}
+	</style>
+</head>
+<body>
+<!-- 宽高的位置 -->
+<!-- onload -->
+<canvas id="cvs" width='500px' height='500px'></canvas>
+	<script>
+		var oCvs = document.getElementById('cvs');
+		var context = oCvs.getContext('2d');
+		var img = new Image();
+		img.onload = function(){
+			context.drawImage(img, 0, 0, 300, 300);
+		}
+		img.src = 'img/1.jpg';
+		
+		// var oImg = new Image();
+		// oImg.omload =
+		// oImg.src = ''
+
+	</script>
+</body>
+</html>
